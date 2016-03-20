@@ -1,0 +1,284 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Survey - Jacob Vogelbacher</title>
+
+		<link rel="stylesheet" href="css/styles.css">
+		<script src="js/process_form.js"></script>
+	</head>
+
+	<body>
+
+		<header>
+			<h1>What is your Spirit Animal?</h1>
+		</header>
+
+		<div id="container">
+
+			<div class="col" id="mainContent">
+
+				<form action="process.php" method="post" name="mySurvey" id="mySurvey">
+
+					<fieldset>
+						<legend>Personal Info</legend>
+
+								<label for="fname">First Name</label>
+								<input type="text" id="fname" name="fname" value="" required />
+								<div class="inputDiv" id="fnameDiv"></div>
+								
+
+								<label for="lname">Last Name</label>
+								<input type="text" id="lname" name="lname" value="" required />
+								<div class="inputDiv" id="lnameDiv"></div>
+
+
+								<label for="phone">Phone Number</label>
+								<input type="tel" id="phone" name="phone" placeholder="###-###-####" value="" required />
+								<div class="inputDiv" id="phoneDiv"></div>
+
+					
+								<label for="email">Email Address</label>
+								<input type="email" id="email" name="email" value="" required />
+								<div class="inputDiv" id="emailDiv"></div>
+							
+
+							<label for="anonymous">Anonymous</label>
+							<input type="checkbox" id="anonymous" name="anonymous" />
+
+					</fieldset>
+
+					<fieldset id="questions">
+						<legend>Questions</legend>
+
+							<p>1. Which food item do you prefer?</p>
+								<div class="surveySection">
+
+									<div class="surveyRow">
+										<input type="radio" name="food" id="redMeat" value="red meat" required />
+										<label for="redMeat">Red Meat</label>
+									</div>
+
+									<div class="surveyRow">
+										<input type="radio" name="food" id="fruitVeg" value="fruits and veggies" required />
+										<label for="fruitVeg">Fruits and Veggies</label>
+									</div>
+
+									<div class="surveyRow">
+										<input type="radio" name="food" id="pasta" value="pasta" required />
+										<label for="pasta">Pasta</label>
+									</div>
+
+									<div class="surveyRow">
+										<input type="radio" name="food" id="fish" value="fish" required />
+										<label for="fish">Fish</label>
+									</div>
+
+									<div class="surveyRow">
+										<input type="radio" name="food" id="candy" value="candy" required />
+										<label for="candy">Candy</label>
+									</div>
+
+									<div class="surveyRow">
+										<input type="radio" name="food" id="crackers" value="crackers" required />
+										<label for="crackers">Crackers</label>
+									</div>
+
+								</div>
+
+							<p>2. Which movie genre would you prefer to watch?</p>
+								<div class="surveySection">
+									
+									<div class="surveyRow">
+										<input type="radio" name="movie" id="actAdv" value="action/adventure" required />
+										<label for="actAdv">Action/Adventure</label>
+									</div>
+
+									<div class="surveyRow">
+										<input type="radio" name="movie" id="comedy" value="comedy" required />
+										<label for="comedy">Comedy</label>
+									</div>
+
+									<div class="surveyRow">
+										<input type="radio" name="movie" id="horror" value="horror" required />
+										<label for="horror">Horror</label>
+									</div>
+
+									<div class="surveyRow">
+										<input type="radio" name="movie" id="romance" value="romance" required />
+										<label for="romance">Romance</label>
+									</div>
+
+									<div class="surveyRow">
+										<input type="radio" name="movie" id="animation" value="animation" required />
+										<label for="animation">Animation</label>
+									</div>
+
+									<div class="surveyRow">
+										<input type="radio" name="movie" id="musical" value="musical" required />
+										<label for="musical">Musical</label>
+									</div>
+
+								</div>
+
+							<p>3. Where do you want to live?</p>
+								<div class="surveySection">
+									
+									<div class="surveyRow">
+										<input type="radio" name="live" id="mountains" value="in the mountains" required />
+										<label for="mountains">Mountains</label>
+									</div>
+
+									<div class="surveyRow">
+										<input type="radio" name="live" id="beach" value="by the beach" required />
+										<label for="beach">Beachside</label>
+									</div>
+
+									<div class="surveyRow">
+										<input type="radio" name="live" id="countryside" value="in the countryside" required />
+										<label for="countryside">Countryside</label>
+									</div>
+
+									<div class="surveyRow">
+										<input type="radio" name="live" id="desert" value="in the desert" required />
+										<label for="desert">Desert</label>
+									</div>
+
+									<div class="surveyRow">
+										<input type="radio" name="live" id="city" value="in a big city" required />
+										<label for="city">Big City</label>
+									</div>
+
+									<div class="surveyRow">
+										<input type="radio" name="live" id="woodland" value="in the woodland" required />
+										<label for="woodland">Woodland</label>
+									</div>
+
+								</div>
+
+							<p>4. What genre of music do you prefer?</p>
+								<div class="surveySection">
+									
+									<div class="surveyRow">
+										<input type="radio" name="music" id="rock" value="rock n' roll" required />
+										<label for="rock">Rock N' Roll</label>
+									</div>
+
+									<div class="surveyRow">
+										<input type="radio" name="music" id="pop" value="pop" required />
+										<label for="pop">Pop</label>
+									</div>
+
+									<div class="surveyRow">
+										<input type="radio" name="music" id="country" value="country" required />
+										<label for="country">Country</label>
+									</div>
+
+									<div class="surveyRow">
+										<input type="radio" name="music" id="rap" value="hip-hop/rap" required />
+										<label for="rap">Hip-Hop/Rap</label>
+									</div>
+
+									<div class="surveyRow">
+										<input type="radio" name="music" id="edm" value="EDM" required />
+										<label for="edm">EDM</label>
+									</div>
+
+									<div class="surveyRow">
+										<input type="radio" name="music" id="jazz" value="jazz" required />
+										<label for="jazz">Jazz</label>
+									</div>
+
+								</div>
+
+							<p>5. Which sport do you prefer?</p>
+								<div class="surveySection">
+									
+									<div class="surveyRow">
+										<input type="radio" name="sport" id="football" value="american football" required />
+										<label for="football">American Football</label>
+									</div>
+
+									<div class="surveyRow">
+										<input type="radio" name="sport" id="baseball" value="baseball" required />
+										<label for="baseball">Baseball</label>
+									</div>
+
+									<div class="surveyRow">
+										<input type="radio" name="sport" id="soccer" value="soccer" required />
+										<label for="soccer">Soccer</label>
+									</div>
+
+									<div class="surveyRow">
+										<input type="radio" name="sport" id="curling" value="curling" required />
+										<label for="curling">Curling</label>
+									</div>
+
+									<div class="surveyRow">
+										<input type="radio" name="sport" id="skating" value="figure skating" required />
+										<label for="skating">Figure Skating</label>
+									</div>
+
+									<div class="surveyRow">
+										<input type="radio" name="sport" id="hockey" value="hockey" required />
+										<label for="hockey">Hockey</label>
+									</div>
+
+								</div>
+
+							<p>6. If you could meet any of these poeple, who would you pick?</p>
+								<div class="surveySection">
+									
+									<div class="surveyRow">
+										<input type="radio" name="people" id="abe" value="Abraham Lincoln" required />
+										<label for="abe">Abraham Lincoln</label>
+									</div>
+
+									<div class="surveyRow">
+										<input type="radio" name="people" id="lenin" value="John Lennon" required />
+										<label for="lenin">John Lennon</label>
+									</div>
+
+									<div class="surveyRow">
+										<input type="radio" name="people" id="ellen" value="Ellen Degeneres" required />
+										<label for="ellen">Ellen Degeneres</label>
+									</div>
+
+									<div class="surveyRow">
+										<input type="radio" name="people" id="aziz" value="Aziz Ansari" required />
+										<label for="aziz">Aziz Ansari</label>
+									</div>
+
+									<div class="surveyRow">
+										<input type="radio" name="people" id="gates" value="Bill Gates" required />
+										<label for="gates">Bill Gates</label>
+									</div>
+
+									<div class="surveyRow">
+										<input type="radio" name="people" id="mlk" value="Martin Luther King, Jr" required />
+										<label for="mlk">Martin Luther King, Jr.</label>
+									</div>
+
+								</div>
+
+
+							<input type="submit" id="submit" name="submit" value="Submit" />
+
+					</fieldset>
+
+				</form>
+
+			</div>
+
+			<div class="col" id="sidebar">
+				<h2>Advertisements</h2>
+			</div>
+
+		</div>
+
+		<footer>
+			<p>Created by Jacob Vogelbacher</p>
+		</footer>
+
+	</body>
+</html>
